@@ -8,23 +8,42 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: url('background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
             color: white;
+            text-align: center;
+            overflow: hidden;
         }
+
+        /* Animated Gradient Background */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #ff6b6b, #556270, #4ecdc4, #ffcc5c);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
         .container {
             position: relative;
+            z-index: 1;
             padding: 50px;
         }
-        .profile {
-            margin-top: 50px;
-        }
+
         .profile img {
             width: 150px;
             border-radius: 50%;
             border: 3px solid white;
+            margin-top: 50px;
         }
+
         .icons {
             margin-top: 20px;
         }
@@ -39,6 +58,7 @@
         .icons img:hover {
             transform: scale(1.2);
         }
+
         .projects {
             margin-top: 50px;
         }
