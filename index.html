@@ -3,10 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+    <title>Anil Thapa | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            position: relative;
+            padding: 50px;
+        }
+        .profile {
+            margin-top: 50px;
+        }
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .icons {
+            margin-top: 20px;
+        }
+        .icons a {
+            display: inline-block;
+            margin: 10px;
+        }
+        .icons img {
+            width: 40px;
+            transition: 0.3s;
+        }
+        .icons img:hover {
+            transform: scale(1.2);
+        }
+        .projects {
+            margin-top: 50px;
+        }
+        .projects h2 {
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-list li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .project-list a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, I'm Anil Thapa!</h1>
-    <p>Welcome to my personal GitHub Pages site.</p>
+
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Anil Thapa">
+            <h1>Anil Thapa</h1>
+            <p>Data Scientist | Deep Learning Enthusiast | High-Energy Physics</p>
+        </div>
+
+        <div class="icons">
+            <a href="mailto:your-email@gmail.com" target="_blank">
+                <img src="gmail.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/your-username" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul class="project-list">
+                <li><a href="https://github.com/your-username/project1" target="_blank">🔹 CNN for Image Classification</a></li>
+                <li><a href="https://github.com/your-username/project2" target="_blank">🔹 RNN for Stock Price Prediction</a></li>
+                <li><a href="https://github.com/your-username/project3" target="_blank">🔹 Kafka Event Streaming for Plane Landings</a></li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
