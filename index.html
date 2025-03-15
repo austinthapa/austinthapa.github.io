@@ -1,120 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anil Thapa | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ello, I am Austin!</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            overflow: hidden;
-        }
+      body,
+      html {
+        margin: 0;
+      }
 
-        /* Animated Gradient Background */
-        @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+      #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+      }
 
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(-45deg, #ff6b6b, #556270, #4ecdc4, #ffcc5c);
-            background-size: 400% 400%;
-            animation: gradientAnimation 10s ease infinite;
-        }
+      p {
+        font-size: 6em;
+        font-family: "Georgia";
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+      }
 
-        .container {
-            position: relative;
-            z-index: 1;
-            padding: 50px;
-        }
+      h2 {
+        font-size: 2.4em;
+        font-family: "Georgia";
+        margin: 0;
+        padding: 0;
+      }
 
-        .profile img {
-            width: 150px;
-            border-radius: 50%;
-            border: 3px solid white;
-            margin-top: 50px;
-        }
+      .social-icons {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
 
-        .icons {
-            margin-top: 20px;
-        }
-        .icons a {
-            display: inline-block;
-            margin: 10px;
-        }
-        .icons img {
-            width: 40px;
-            transition: 0.3s;
-        }
-        .icons img:hover {
-            transform: scale(1.2);
-        }
+      .icon {
+        font-size: 2em;
+        margin: 0 0.5em;
+        color: #ffffff;
+        text-decoration: none;
+      }
 
-        .projects {
-            margin-top: 50px;
+      .icon:hover {
+        color: #0077b5;
+      }
+
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          270deg,
+          #01acde,
+          #c5d201,
+          #f59a00,
+          #e30613,
+          #c91d61
+        );
+        background-size: 1000% 1000%;
+        animation: changeColors 30s ease infinite;
+      }
+
+      @keyframes changeColors {
+        0% {
+          background-position: 0% 50%;
         }
-        .projects h2 {
-            border-bottom: 2px solid white;
-            display: inline-block;
-            padding-bottom: 5px;
+        50% {
+          background-position: 100% 50%;
         }
-        .project-list {
-            list-style: none;
-            padding: 0;
+        100% {
+          background-position: 0% 50%;
         }
-        .project-list li {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .project-list a {
-            color: #FFD700;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .project-list a:hover {
-            text-decoration: underline;
-        }
+      }
     </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="particles-js"></div>
 
-    <div class="container">
-        <div class="profile">
-            <img src="profile.jpg" alt="Anil Thapa">
-            <h1>Anil Thapa</h1>
-            <p>Data Scientist | Deep Learning Enthusiast | High-Energy Physics</p>
-        </div>
+    <div id="content">
+      <p>Austin Thapa</p>
+      <h2>Data Scientist</h2>
+      <div class="social-icons">
+        <a href="http://github.com/axt0895" class="icon github"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="http://linkedin.com/in/anil-thapa-354b23353/"
+          class="icon linkedin"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=anilthapa1.at23@gmail.com"
+          class="icon gmail"
+          target="_blank"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
 
-        <div class="icons">
-            <a href="mailto:your-email@gmail.com" target="_blank">
-                <img src="gmail.png" alt="Gmail">
-            </a>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
-                <img src="linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/your-username" target="_blank">
-                <img src="github.png" alt="GitHub">
-            </a>
-        </div>
-
-        <div class="projects">
-            <h2>Projects</h2>
-            <ul class="project-list">
-                <li><a href="https://github.com/your-username/project1" target="_blank">🔹 CNN for Image Classification</a></li>
-                <li><a href="https://github.com/your-username/project2" target="_blank">🔹 RNN for Stock Price Prediction</a></li>
-                <li><a href="https://github.com/your-username/project3" target="_blank">🔹 Kafka Event Streaming for Plane Landings</a></li>
-            </ul>
-        </div>
+        <a href="yourprojectsurl" class="icon dashboard"
+          ><i class="fas fa-tachometer-alt"></i
+        ></a>
+      </div>
+      <div>About</div>
     </div>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 120, density: { enable: true, value_area: 800 } },
+          color: { value: "#ffffff" },
+          shape: { type: "circle" },
+          opacity: { value: 10, random: false },
+          size: { value: 3, random: true },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 1,
+            width: 2,
+          },
+          move: {
+            enable: true,
+            speed: 5,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>
+  </body>
 </html>
