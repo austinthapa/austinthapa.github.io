@@ -4,155 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ello, I am Austin!</title>
-    <style>
-      body,
-      html {
-        margin: 0;
-      }
-
-      #content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #ffffff;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0;
-      }
-
-      p {
-        font-size: 6em;
-        font-family: "Georgia";
-        font-weight: 500;
-        margin: 0;
-        padding: 0;
-      }
-
-      h2 {
-        font-size: 2.4em;
-        font-family: "Georgia";
-        margin: 0;
-        padding: 0;
-      }
-
-      .social-icons {
-        margin-top: 1em;
-        margin-bottom: 1em;
-      }
-
-      .icon {
-        font-size: 2em;
-        margin: 0 0.5em;
-        color: #ffffff;
-        text-decoration: none;
-      }
-
-      .icon:hover {
-        color: #0077b5;
-      }
-
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(
-          270deg,
-          #01acde,
-          #c5d201,
-          #f59a00,
-          #e30613,
-          #c91d61
-        );
-        background-size: 1000% 1000%;
-        animation: changeColors 30s ease infinite;
-      }
-
-      @keyframes changeColors {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
-    <div id="particles-js"></div>
-
-    <div id="content">
-      <p>Austin Thapa</p>
-      <h2>Data Scientist</h2>
-      <div class="social-icons">
-        <a href="http://github.com/axt0895" class="icon github"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="http://linkedin.com/in/anil-thapa-354b23353/"
-          class="icon linkedin"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=anilthapa1.at23@gmail.com"
-          class="icon gmail"
-          target="_blank"
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-
-        <a href="yourprojectsurl" class="icon dashboard"
-          ><i class="fas fa-tachometer-alt"></i
-        ></a>
+    <div class="container">
+      <!-- Page 1: Portfolio Introduction Page -->
+      <div class="page">
+        <div id="particles-js"></div>
+        <div id="content">
+          <div id="name">Austin Thapa</div>
+          <div id="title">Data Scientist</div>
+          <div class="social-icons">
+            <a href="http://github.com/austinthapa" class="icon github"><i class="fab fa-github"></i></a>
+            <a href="http://linkedin.com/in/anil-thapa-354b23353/" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:anilthapa1.at23@gmail.com" class="icon gmail" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="yourprojectsurl" class="icon dashboard"><i class="fas fa-tachometer-alt"></i></a>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="particle.js"></script>
       </div>
-      <div>About</div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: { value: 120, density: { enable: true, value_area: 800 } },
-          color: { value: "#ffffff" },
-          shape: { type: "circle" },
-          opacity: { value: 10, random: false },
-          size: { value: 3, random: true },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 1,
-            width: 2,
-          },
-          move: {
-            enable: true,
-            speed: 5,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-          },
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: { enable: true, mode: "repulse" },
-            onclick: { enable: true, mode: "push" },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
+      <!-- Page 2: Timeline of Projects -->
+      <div class="page">About the TimeLine of projects I have done</div>
+
+      <!-- Page 3: Tableau Dashboard -->
+      <div class="page">This is Tableau Dashboard</div>
+    </div>
   </body>
 </html>
