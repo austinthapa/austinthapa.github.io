@@ -1,10 +1,10 @@
 title: Austin Portfolio
 description: Hola, bienvenidos, amigos!
-author: Anil Thapa
+author: Austin Thapa
 email: anilthapa1.at23@gmail.com
 
 baseurl: "" # Leave blank unless hosted in a subdirectory
-url: "https://axt0895.github.io" # Replace with your GitHub Pages URL
+url: "https://austinthapa.github.io" # Replace with your GitHub Pages URL
 
 theme: jekyll-theme-minimal # Use GitHub Pages built-in themes
 
