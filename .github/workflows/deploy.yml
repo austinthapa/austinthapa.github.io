@@ -13,10 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install Dependencies (Optional)
-        run: |
-          npm install
-          npm run build
       - name: Deploy to CloudFlare Pages
         uses: cloudflare/pages-action@v1
         with:
