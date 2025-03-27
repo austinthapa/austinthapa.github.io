@@ -1,0 +1,27 @@
+name: Deploy to CloudFlare
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies (Optional)
+        run: |
+          npm install
+          npm run build
+      - name: Deploy to CloudFlare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{secrets.CF_API_TOKEN}}
+          accountId: ${{secrets.CF_ACCOUNT_ID}}
+          projectName: austinthapa-cloudflare-portfolio
+          directory: public
+          branch: main
