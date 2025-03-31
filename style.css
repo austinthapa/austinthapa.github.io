@@ -6,6 +6,10 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 .container {
   height: 100vh;
   width: 100%;
@@ -83,5 +87,127 @@ html {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+.timeline {
+  position: relative;
+  margin: 80px 0;
+}
+
+.timeline-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 60px 0 20px;
+  gap: 20px;
+}
+
+.timeline-container::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to .timeline-container */
+  left: 0; /* Start from the left edge */
+  top: 40px; /* Position vertically - align with top padding */
+  height: 2px; /* Thickness of the line */
+  width: 100%; /* Span the full width of the container */
+  background-color: #007bff; /* Line color */
+  z-index: 1; /* Place line behind item content but above container bg */ /* Ensure the line visually extends; adjust if padding causes issues */
+  min-width: 100%; /* Ensure line draws even if content is narrow */
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Start at the top edge of the item's box */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Precise centering */
+  width: 2px; /* Stem thickness */
+  height: 20px; /* Stem height (connects to the margin-top space) */
+  background-color: #007bff; /* Stem color */
+  z-index: 2; /* Behind the dot */
+}
+
+/* Dot on the Timeline */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: -12px; /* Position relative to item's top edge + margin. (-margin_top + line_position - dot_radius) approx -20px + 40px - 8px -> No wait... top of the item box is 20px below the line. We need to go up 20px from item top edge + half dot height + half line height */
+  /* Simpler: Position relative to the top padding space created by padding-top: 40px */
+  /* Let's try positioning relative to the item's padding-box top edge. The line is 20px above this edge. */
+  top: -20px; /* Position the dot's center vertically relative to item's top */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the dot exactly */
+  width: 10px; /* Dot size */
+  height: 10px; /* Dot size */
+  background-color: #ffffff; /* Dot background */
+  border: 2px solid #007bff; /* Dot border (matches line color) */
+  border-radius: 50%; /* Make it circular */
+  z-index: 3; /* Ensure dot is above the stem and line */
+}
+
+.above-timeline-item {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.below-timeline-item {
+  min-width: 280px;
+  position: relative;
+  padding-top: 40px;
+  flex-shrink: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.timeline-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.timeline-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.content-project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 300px;
+}
+
+.project-tech {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tech-tag {
+  background-color: #ecf0f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  color: #2c3e50;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    min-width: 250px;
   }
 }
