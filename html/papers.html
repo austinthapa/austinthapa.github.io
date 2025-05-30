@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="/styles/papers.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="page-title">Papers Implemented</h1>
+      <p class="page-subtitle">A collection of research papers I’ve reproduced, explored, or extended through code.</p>
+
+      <div class="papers-container">
+        <!--Attention Is All You Need-->
+        <div class="paper-card">
+          <h2 class="paper-title">Attention Is All You Need</h2>
+          <p class="paper-authors">Vaswani et al., 2017</p>
+          <p class="paper-summary">Implemented a scaled-down Transformer in PyTorch for machine translation. Focused on positional encodings and multi-head attention.</p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/1706.03762" target="_blank">View Paper</a>
+            <a href="https://github.com/yourusername/transformer-implementation" target="_blank">GitHub Repo</a>
+          </div>
+          <div class="tags">
+            <span class="tag nlp">NLP</span>
+            <span class="tag dl">Deep Learning</span>
+          </div>
+        </div>
+
+        <!--Vision Transformer-->
+        <div class="paper-card">
+          <h2 class="paper-title">An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale</h2>
+          <p class="paper-authors">Dosovitskiy et al., 2020</p>
+          <p class="paper-summary">
+            Re-implemented Vision Transformer using PyTorch. The model splits input images into 16x16 patches, encodes them with positional embeddings, and processes them through transformer encoder layers. Evaluated performance on CIFAR-10 and
+            ImageNet subsets.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2010.11929" target="_blank">View Paper</a>
+            <a href="https://github.com/yourusername/vit-implementation" target="_blank">GitHub Repo</a>
+          </div>
+          <div class="tags">
+            <span class="tag cv">Computer Vision</span>
+            <span class="tag dl">Deep Learning</span>
+            <span class="tag nlp">Transformer</span>
+          </div>
+        </div>
+
+        <!--ResNet-->
+        <div class="paper-card">
+          <h2 class="paper-title">Deep Residual Learning for Image Recognition (ResNet)</h2>
+          <p class="paper-authors">He et al., 2015</p>
+          <p class="paper-summary">
+            Reproduced ResNet-18 and ResNet-34 architectures from scratch using PyTorch to understand skip connections and vanishing gradient mitigation. Trained the models on CIFAR-10 and evaluated top-1 accuracy, comparing performance with baseline
+            CNNs.
+          </p>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/1512.03385" target="_blank">View Paper</a>
+            <a href="https://github.com/yourusername/resnet-from-scratch" target="_blank">GitHub Repo</a>
+          </div>
+          <div class="tags">
+            <span class="tag cv">Computer Vision</span>
+            <span class="tag dl">Deep Learning</span>
+            <span class="tag cnn">CNN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
