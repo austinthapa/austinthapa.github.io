@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9fb;
+  color: #333;
+}
+
+.page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.papers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.paper-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-5px);
+}
+
+.paper-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.paper-authors {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.paper-summary {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+.paper-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-right: 8px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  color: white;
+}
+
+.tag.nlp {
+  background-color: #8e44ad;
+}
+.tag.cv {
+  background-color: #2980b9;
+}
+.tag.dl {
+  background-color: #27ae60;
+}
+.tag.rl {
+  background-color: #e67e22;
+}
