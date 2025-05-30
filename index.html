@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ello, I am Austin!</title>
-    <link rel="icon" href="/favicon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="styles/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   </head>
   <body>
     <div class="container">
       <!-- Page 1: Portfolio Introduction Page -->
-      <div class="page" id="page1">
+      <div class="page">
         <div id="particles-js"></div>
         <div id="content">
           <div id="name">Austin Thapa</div>
@@ -24,69 +24,16 @@
           </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-        <script src="particle.js"></script>
+        <script src="scripts/particle.js"></script>
       </div>
 
-      <!-- Page 2: Timeline of Projects -->
-      <div class="page" style="background-color: aliceblue">
-        <h1>My Projects Timeline</h1>
-        <hr />
-        <div class="timeline">
-          <div class="timeline-container" id="timeline-container">
-            <div class="timeline-item">
-              <div class="content-project">
-                <h2 class="project-title">Tactical Football Analysis</h2>
-                <p class="project-description">Developed an AI-powered content generation tool that helped marketing teams produce consistent content 3x faster.</p>
-                <div class="project-tech">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">TensorFlow</span>
-                  <span class="tech-tag">OpenCV</span>
-                  <span class="tech-tag">Supervision</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="content-project">
-                <h2 class="project-title">Healthcare Management System</h2>
-                <p class="project-description">Built a comprehensive healthcare management system for a regional hospital, streamlining patient care and reducing administrative workload.</p>
-                <div class="project-tech">
-                  <span class="tech-tag">Vue.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="content-project">
-                <h2 class="project-title">Healthcare Management System</h2>
-                <p class="project-description">Built a comprehensive healthcare management system for a regional hospital, streamlining patient care and reducing administrative workload.</p>
-                <div class="project-tech">
-                  <span class="tech-tag">Vue.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="content-project">
-                <h2 class="project-title">Healthcare Management System</h2>
-                <p class="project-description">Built a comprehensive healthcare management system for a regional hospital, streamlining patient care and reducing administrative workload.</p>
-                <div class="project-tech">
-                  <span class="tech-tag">Vue.js</span>
-                  <span class="tech-tag">Express</span>
-                  <span class="tech-tag">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="page">
+        <iframe src="html/projects.html" type="text/html" style="width: 100%; height: 100vh"></iframe>
       </div>
 
-      <!-- Page 3: Tableau Dashboard -->
-      <div class="page" style="background-color: peru; color: red">This is Tableau Dashboard</div>
+      <div class="page">
+        <iframe src="html/papers.html" type="text/html" style="width: 100%; height: 100vh"></iframe>
+      </div>
     </div>
   </body>
 </html>
