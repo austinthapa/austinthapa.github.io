@@ -96,3 +96,47 @@ body {
 .tag.rl {
   background-color: #e67e22;
 }
+
+@media screen and (max-width: 600px) {
+  .page {
+    padding: 20px 10px;
+  }
+
+  .page-title {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+  }
+
+  .page-subtitle {
+    font-size: 1em;
+    margin-bottom: 25px;
+  }
+
+  .paper-card {
+    padding: 18px;
+  }
+
+  .paper-title {
+    font-size: 1.2em;
+  }
+
+  .paper-authors {
+    font-size: 0.85em;
+  }
+
+  .paper-summary {
+    font-size: 0.95em;
+    line-height: 1.4em;
+  }
+
+  .paper-links a {
+    margin-right: 12px;
+    font-size: 0.9em;
+  }
+
+  .tag {
+    font-size: 0.7em;
+    padding: 3px 8px;
+    margin-right: 6px;
+  }
+}

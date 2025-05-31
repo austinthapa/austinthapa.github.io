@@ -103,3 +103,48 @@ body {
   background-color: #3c3838;
   transform: translateY(11px);
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .timeline-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+
+  /*  Hide vertical timeline line */
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 40px 0;
+    transform: none !important;
+  }
+
+  .timeline-item.up,
+  .timeline-item.down {
+    transform: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .timeline-item.up .circle::after,
+  .timeline-item.down .circle::after {
+    display: none;
+  }
+}
