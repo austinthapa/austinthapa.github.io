@@ -1,23 +1,24 @@
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
-  padding: 40px 20px;
+  height: 100%;
   background-color: #fbf7f8;
 }
 
 .timeline-title {
-  font-size: 3em;
-  margin-bottom: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 4em;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .timeline-wrapper {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  height: 100%;
   margin: auto;
   margin-top: 80px;
-  padding: 40px 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -28,28 +29,29 @@ body {
   top: 50%;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #222;
   z-index: 0;
 }
 
 .timeline-item {
   position: relative;
-  width: 200px;
+  width: 230px;
   text-align: center;
   margin: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 1;
+  font-size: small;
 }
 
 .timeline-item.up {
-  transform: translateY(-120px);
+  transform: translateY(-130px);
 }
 
 .timeline-item.down {
-  transform: translateY(120px);
+  transform: translateY(130px);
 }
 
 .circle {
@@ -60,15 +62,19 @@ body {
   position: relative;
 }
 
-.blue,
-.orange,
+.blue {
+  transform: translateY(40px);
+}
 .red {
-  transform: translateY(64px);
+  transform: translateY(70px);
+}
+.orange {
+  transform: translateY(70px);
 }
 
 .purple,
 .green {
-  transform: translateY(-64px);
+  transform: translateY(-38px);
 }
 
 .blue {
@@ -85,23 +91,6 @@ body {
 }
 .red {
   background-color: #e74c3c;
-}
-
-.timeline-item.up .circle::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 80px;
-  background-color: #3c3838;
-  transform: translateY(-81px);
-}
-.timeline-item.down .circle::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 85px;
-  background-color: #3c3838;
-  transform: translateY(11px);
 }
 
 @media screen and (max-width: 600px) {
