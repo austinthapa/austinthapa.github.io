@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -92,7 +92,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: linear-gradient(270deg, #01acde, #c5d201, #f59a00, #e30613, #c91d61);
+  background: linear-gradient(270deg, #01acde, #1dd201, #f59a00, #e30613, #c91d61);
   background-size: 1000% 1000%;
   animation: changeColors 30s ease infinite;
   z-index: -1;
