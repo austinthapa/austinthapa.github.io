@@ -16,48 +16,76 @@
     <div class="timeline-wrapper">
       <div class="timeline-line"></div>
 
-      <!-- Football Projects -->
+      <!--1. Anomaly Detection Pipelines-->
       <div class="timeline-item up">
         <div class="content">
-          <h4>Football Analysis using YOLO & OpenCV</h4>
+          <h3>Anomaly Detection Pipeline</h3>
+          <p>
+            Built an end-to-end anomaly detection system for mental health behavior analysis using DVC for data and experiment versioning. Trained Isolation Forest, LOF, and One-Class SVM models for early depression detection and deployed real-time
+            scoring through a FastAPI service. Automated CI/CD with GitHub Actions and deployed containerized components on Kubernetes for scalable and reliable operations.
+          </p>
+          <a href="https://github.com/austinthapa/anomaly-detection-system" target="_blank">GitHub</a>
+        </div>
+        <div class="circle red"></div>
+      </div>
+
+      <!-- 2. Football Analysis Projects -->
+      <div class="timeline-item down">
+        <div class="circle blue"></div>
+        <div class="content">
+          <h3>Football Analysis using YOLO & OpenCV</h3>
           <p>
             Built an end-to-end football analytics system using YOLO object detection and OpenCV to track players, detect ball position, estimate speed, and distance. Applied perspective correction and player clustering for team identification and
             performance metrics.
           </p>
+          <a href="https://github.com/austinthapa/football-analysis-yolo" target="_blank">GitHub</a>
         </div>
-        <div class="circle blue"></div>
       </div>
-      <!--ETL pipeline-->
+
+      <!-- 3. Heart Attack Prediction Pipeline-->
+      <div class="timeline-item up">
+        <div class="content">
+          <h3>Heart Attack Prediction Pipeline</h3>
+          <p>
+            Created a complete MLOps pipeline for heart attack prediction with robust preprocessing and feature engineering. Trained and benchmarked multiple ML and ensemble models using Scikit-learn, orchestrated workflows with ZenML, and logged
+            experiments via MLflow. Deployed real-time inference with FastAPI and scaled the Dockerized pipeline on Kubernetes with automated CI/CD using GitHub Actions.
+          </p>
+        </div>
+        <a href="https://github.com/austinthapa/ml-ops-pipeline" target="_blank">GitHub</a>
+        <div class="circle orange"></div>
+      </div>
+
+      <!-- 4. ETL pipeline-->
       <div class="timeline-item down">
         <div class="circle purple"></div>
         <div class="content">
           <h3>ETL Pipeline Databricks</h3>
           <p>A modular ETL pipeline using PySpark that reads from JSON, Parquet, and Avro sources via the factory pattern. Business logic is applied before writing the transformed data to sinks like Parquet, DBFS, or other storage systems.</p>
         </div>
+        <a href="https://github.com/austinthapa/" target="_blank">GitHub</a>
       </div>
 
+      <!-- 5. Sentiment Analysis Pipeline-->
       <div class="timeline-item up">
+        <div class="content">
+          <h3>Text Sentiment Analysis Pipeline</h3>
+          <p>
+            Developed a sentiment analysis pipeline for Yelp reviews with DVC-based data tracking and NLP preprocessing. Trained LightGBM, XGBoost, and BERT models for accurate sentiment scoring and exposed real-time prediction endpoints via FastAPI.
+            Implemented CI/CD with GitHub Actions and deployed the Dockerized system on Kubernetes for scalable inference.
+          </p>
+        </div>
+        <a href="https://github.com/austinthapa/sentiment-analysis-pipeline" target="_blank">GitHub</a>
+        <div class="circle green"></div>
+      </div>
+
+      <!--  6. Real Time Data Streaming Pipeline-->
+      <div class="timeline-item down">
+        <div class="circle black"></div>
         <div class="content">
           <h3>Real Time Data Streaming</h3>
           <p>Built a Dockerized real-time data pipeline using Kafka, Spark, and Cassandra to ingest and process user logs. Implemented schema validation with Confluent Registry and enabled Kafka monitoring via Control Center.</p>
         </div>
-        <div class="circle orange"></div>
-      </div>
-
-      <div class="timeline-item down">
-        <div class="circle green"></div>
-        <div class="content">
-          <h3>fine-tuning BERT</h3>
-          <p>Built a Dockerized real-time data pipeline using Kafka, Spark, and Cassandra to ingest and process user logs. Implemented schema validation with Confluent Registry and enabled Kafka monitoring via Control Center.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item up">
-        <div class="content">
-          <h3>fine-tuning BERT</h3>
-          <p>Built a Dockerized real-time data pipeline using Kafka, Spark, and Cassandra to ingest and process user logs. Implemented schema validation with Confluent Registry and enabled Kafka monitoring via Control Center.</p>
-        </div>
-        <div class="circle red"></div>
+        <a href="https://github.com/austinthapa/real-time-data-streaming" target="_blank">GitHub</a>
       </div>
     </div>
   </body>
